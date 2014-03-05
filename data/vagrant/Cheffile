@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'build-essential'
+cookbook 'timezone'
+#cookbook 'oh-my-zsh-solo'
+cookbook 'apt'
+cookbook 'xml'
+cookbook 'zlib'
+cookbook 'mysql'
+cookbook 'git'
+cookbook 'apache2'
+cookbook 'php'
+cookbook 'composer'

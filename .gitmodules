@@ -1,0 +1,9 @@
+[submodule "data/vagrant/sites-cookbook/xdebug"]
+	path = data/vagrant/sites-cookbook/xdebug
+	url = https://mychiara@github.com/mychiara/xdebug.git
+[submodule "data/vagrant/sites-cookbook/my-utils-packages"]
+	path = data/vagrant/sites-cookbook/my-utils-packages
+	url = https://mychiara@github.com/mychiara/my-utils-packages.git
+[submodule "data/vagrant/sites-cookbook/php-intl"]
+	path = data/vagrant/sites-cookbook/php-intl
+	url = https://mychiara@github.com/mychiara/php-intl.git
