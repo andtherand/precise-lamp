@@ -1,10 +1,8 @@
 {
     "name": "mysql",
-    "description": "installs and configures y mysql server",
+    "description": "installs and configures mysql server",
     "chef_type": "role",
     "json_class": "Chef::Role",
-
-    //
     "default_attributes": {
         "mysql": {
             "allow_remote_root": true,
@@ -15,7 +13,6 @@
         }
     },
 
-    //
     "run_list": [
         "recipe[mysql::client]",
         "recipe[mysql::server]"

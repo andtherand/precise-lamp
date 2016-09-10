@@ -11,6 +11,7 @@ Vagrant.configure("2") do | config |
 
   config.omnibus.chef_version = :latest
   config.vbguest.auto_update = true
+  config.librarian_chef.cheffile_dir = data_base_path
 
   # virtualbox specific settings
   config.vm.provider :virtualbox do | vb |
@@ -18,7 +19,7 @@ Vagrant.configure("2") do | config |
   end
 
   config.vm.provision :chef_solo do | chef |
-    chef.cookbooks_path = [data_base_path + "cookbooks", data_base_path + "sites-cookbook"]
+    chef.cookbooks_path = [data_base_path + "cookbooks"]
     chef.roles_path = data_base_path + "roles"
 
     chef.add_role "lamp"
